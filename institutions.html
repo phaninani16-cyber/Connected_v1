@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ConnectEd | Institution Partner Access</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Internal partner access for career-aligned institutions." />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: linear-gradient(180deg, #060914, #0b1020);
+      color: #e5e7eb;
+    }
+
+    .glow {
+      box-shadow: 0 0 40px rgba(99,102,241,0.25);
+    }
+
+    .institution-wrapper {
+      padding: 120px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .institution-panel {
+      max-width: 560px;
+      width: 100%;
+      padding: 42px 38px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #0b1220, #121c2e);
+      border: 1px solid rgba(99,102,241,0.3);
+      box-shadow: 0 30px 80px rgba(15,23,42,0.55);
+      text-align: center;
+    }
+
+    .institution-panel::before {
+      content: "INTERNAL PARTNER ACCESS";
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 18px;
+    }
+
+    .institution-panel h1 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #e0e7ff;
+    }
+
+    .institution-panel p {
+      font-size: 14px;
+      color: #c7d2fe;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .institution-panel form {
+      text-align: left;
+    }
+
+    .institution-panel label {
+      display: block;
+      font-size: 12px;
+      color: #a5b4fc;
+      margin-bottom: 6px;
+    }
+
+    .institution-panel input,
+    .institution-panel textarea {
+      width: 100%;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(99,102,241,0.35);
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .institution-panel textarea {
+      resize: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+    }
+
+    .submit-btn:hover {
+      filter: brightness(1.1);
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 26px;
+      text-align: center;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-slate-800 backdrop-blur">
+    <h1 class="text-xl font-bold tracking-wide">
+      Connect<span class="text-indigo-400">Ed</span>
+    </h1>
+    <a href="index.html" class="text-sm text-slate-300 hover:text-indigo-400">
+      ← Back to Student Site
+    </a>
+  </nav>
+
+  <!-- INSTITUTE ACCESS -->
+  <section class="institution-wrapper">
+    <div class="institution-panel">
+
+      <h1>Institution Partner Onboarding</h1>
+      <p>
+        This access is intended for accredited institutions exploring
+        career-aligned student discovery through ConnectEd.
+      </p>
+
+      <form>
+        <label>Institution / College Name</label>
+        <input type="text" placeholder="e.g. ABC Institute of Technology" />
+
+        <label>Contact Person</label>
+        <input type="text" placeholder="Full name" />
+
+        <label>Official Email</label>
+        <input type="email" placeholder="official@email.com" />
+
+        <label>City / District</label>
+        <input type="text" placeholder="Anantapur, AP" />
+
+        <label>About the Institution</label>
+        <textarea rows="4" placeholder="Programs offered, focus areas, accreditations"></textarea>
+
+        <button class="submit-btn glow">Request Partner Access</button>
+      </form>
+
+      <span class="back-link">
+        This does not guarantee onboarding. Internal review applies.
+      </span>
+
+    </div>
+  </section>
+
+</body>
+</html>
